@@ -1,4 +1,6 @@
-nuget restore LetsChatApplication.sln
+@REM nuget restore LetsChat.sln
 
-call msbuild14 LetsChatApplication.sln
+msbuild /v:m LetsChat.sln
+del src\bin\*.xml
+
 @PAUSE
